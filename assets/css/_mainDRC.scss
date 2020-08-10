@@ -1,0 +1,41 @@
+main {
+	.derecha {
+		display: flex;
+		width: 40%;
+		height: 100%;
+		.foto_tenis {
+			width: 100%;
+			position: relative;
+			height: 100%;
+			img {
+				filter: brightness(140%) saturate(145%);
+				top: -15px;
+				right: -3em;
+				position: absolute;
+				width: 125%;
+			}
+		}
+
+		.more_text {
+			color: #ebebeb;
+			position: absolute;
+			right: 0;
+			top: 3em;
+			width: 15em;
+			height: 8em;
+			text-shadow: -1px 4px 10px rgba(26, 26, 26, 0.514);
+			line-height: 50%;
+			.text_lite {
+				font-weight: 300;
+				letter-spacing: 2px;
+				
+			}
+			.text_bold {
+				width: 100%;
+				line-height: 90%;
+				font-weight: 800;
+				font-size: 3.8em;
+			}
+		}
+	}
+}

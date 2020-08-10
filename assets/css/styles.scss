@@ -1,0 +1,159 @@
+@import 'header';
+@import 'mainDRC';
+@import 'mainIZQ';
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+	word-wrap: break-word;
+}
+html,
+body {
+	height: 100vh;
+	// background: linear-gradient(to right, #434b55, #747c83);
+}
+body {
+	background: linear-gradient(to right, #434b55, #747c83);
+	background-attachment: fixed;
+	.content {
+		max-width: 1200px;
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+@media only screen and (max-width: 1250px) {
+	main .izquierda {
+		width: 70%;
+	}
+	main .derecha {
+		width: 30%;
+	}
+	main .izquierda .title_subtitle .title {
+		font-size: 6em;
+	}
+	main .derecha .foto_tenis img {
+		right: -12em;
+		width: 200%;
+	}
+	main .izquierda .pics .vertical3 .informacion .informacion_text {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 1000px) {
+	main .year {
+		left: 0.5em;
+	}
+	main .izquierda .title_subtitle .title {
+		font-size: 5em;
+	}
+	main .izquierda .pics .vertical3 .informacion {
+		padding: 0;
+	}
+	main .izquierda .pics .vertical3 .informacion .informacion_text {
+		font-size: 14px;
+	}
+	main {
+		margin-top: -25px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	main .izquierda .pics .vertical3 .informacion .informacion_text {
+		font-size: 12px;
+	}
+	main .derecha .more_text .text_bold {
+		font-size: 3em;
+	}
+	header .cabecera .menu {
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 759px) {
+	header .cabecera .menu {
+		width: 80%;
+	}
+	main .derecha {
+		display: none;
+	}
+	main .izquierda {
+		width: 100vh;
+	}
+	main .year {
+		left: 0em;
+		font-size: 25em;
+	}
+}
+
+@media only screen and (max-width: 559px) {
+	main .year {
+		left: 0.1em;
+		font-size: 20em;
+	}
+	main {
+		margin-top: -5px;
+	}
+	main .izquierda .pics {
+		flex-wrap: wrap;
+		margin: 0.3em 0;
+	}
+	main .izquierda .pics .vertical1,
+	main .izquierda .pics .vertical2 {
+		width: 50%;
+		margin-bottom: 0.3em;
+	}
+
+	main .izquierda .pics .vertical3 {
+		width: 100%;
+	}
+
+	main .izquierda .title_subtitle .title {
+		font-size: 4em;
+	}
+}
+
+@media only screen and (max-width: 430px) {
+	main .year {
+		left: 0.1em;
+		font-size: 16em;
+	}
+	header .cabecera .menu {
+		width: 100%;
+	}
+	main .izquierda .title_subtitle .title {
+		font-size: 3em;
+	}
+}
+@media only screen and (max-width: 350px) {
+	main .izquierda .title_subtitle .title {
+		font-size: 2.5em;
+	}
+	main .izquierda .pics .vertical1,
+	main .izquierda .pics .vertical2,
+	main .izquierda .pics .vertical3 {
+		width: 100%;
+		margin-bottom: 0.3em;
+	}
+	main .year {
+		font-size: 15em;
+		top: 5em;
+	}
+}
+
+@media only screen and (max-width: 330px) {
+	
+	main .year {
+		font-size: 12em;
+		top: 6em;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	
+	main .year {
+		font-size: 12em;
+		top: 5.2em;
+	}
+}

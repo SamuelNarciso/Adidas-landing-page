@@ -1,0 +1,122 @@
+main {
+	.year {
+		position: absolute;
+		font-weight: 800;
+		font-size: 32em;
+		top: -0.5em;
+		left: 1em;
+		color: #32363b42;
+	}
+	// width: 60%;
+	margin-top: -35px;
+	width: 100%;
+	height: 70%;
+	display: flex;
+	.izquierda {
+		z-index: 2;
+		width: 60%;
+		height: 100%;
+		.title_subtitle {
+			color: #f8f8f8;
+			width: 100%;
+			padding: 0;
+			.title {
+				font-size: 7em;
+				font-weight: 900;
+				text-shadow: -1px 4px 10px rgba(26, 26, 26, 0.699);
+			}
+		}
+
+		.pics {
+			margin-top: -25px;
+			display: flex;
+			width: 100%;
+			height: 100%;
+			.cuadro_chico,
+			.cuadro_grande {
+				width: 100%;
+				height: 100%;
+				// filter: saturate(200%);
+			}
+			.vertical1 {
+				width: 33%;
+				// height: 100%;
+				.cuadro_chico {
+					width: 100%;
+					height: 50%;
+					display: flex;
+					img {
+						width: 100%;
+						height: 100%;
+						box-shadow: -1px 6px 5px 0px rgba(71, 71, 71, 0.5);
+					}
+				}
+			}
+			.vertical2 {
+				width: 33%;
+				// height: 100%;
+				overflow: hidden;
+				.cuadro_grande {
+					width: 100%;
+					border-radius: 15px;
+
+					img {
+						// transform: scale(1.3, 1);
+						width: 100%;
+						height: 100%;
+						box-shadow: -1px 6px 5px 0px rgba(71, 71, 71, 0.5);
+					}
+				}
+			}
+
+			.vertical3 {
+				width: 33%;
+				height: 100%;
+				.informacion {
+					width: 100%;
+					height: 90%;
+					padding: 0 0.6em;
+					text-align: justify;
+					.informacion_text {
+						height: 100%;
+						color: #ffffff;
+					}
+					.color {
+						color: #dd7b60;
+						font-weight: 500;
+					}
+				}
+				.comprar {
+					height: 10%;
+					width: 100%;
+					display: flex;
+					justify-content: center;
+					// align-items: center;
+					input {
+						width: 80%;
+						padding: .5em 0;
+						// height: 100%;
+						border: none;
+						border-radius: 20px;
+						background: linear-gradient(45deg, #e06f50, #bb5437);
+						font-weight: 800;
+						color: #dddddd;
+						box-shadow: -1px 6px 5px 0px rgba(71, 71, 71, 0.5);
+						&:hover {
+							cursor: pointer;
+							background: #bb5437;
+						}
+					}
+				}
+			}
+
+			.foto {
+				padding: 0.5em;
+
+				img {
+					border-radius: 15px;
+				}
+			}
+		}
+	}
+}
